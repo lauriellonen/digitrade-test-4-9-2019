@@ -11,10 +11,26 @@ namespace Kertoma
     {
         static void Main(string[] args)
         {
+            int n = 0;
+            int fact = 1;
+
             Console.WriteLine("Kertoma laskenta");
+            Console.WriteLine("Minkä luvun kertoma lasketaan ? ");
+            n = int.Parse(Console.ReadLine());
 
-
-
+            if(n < 0)
+            {
+                Console.WriteLine("Virheelinen Syöte!");
+            }
+            else
+            {
+                while(n > 0)
+                {
+                    fact = fact * n;
+                    n = n - 1;
+                }
+                Console.WriteLine("Vastaus: " + fact);
+            }
         }
     }
 }
