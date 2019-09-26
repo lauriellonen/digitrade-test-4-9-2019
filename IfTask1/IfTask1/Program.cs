@@ -6,7 +6,25 @@ namespace IfTask1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("If Task One program will solve users put numbers if they're positive or negative.");
+            Console.Write(" please give full number: ");
+            int userInputNumber = int.Parse(Console.ReadLine());
+
+            if(userInputNumber == 0)
+            {
+                Console.WriteLine($"Luku {userInputNumber} is zero!");
+            }
+            else
+            {
+                if(userInputNumber > 0)
+                {
+                    Console.WriteLine($"Numero {userInputNumber} is positive!");
+                }
+                else
+                {
+                    Console.WriteLine($"Luku {userInputNumber} is negative ");
+                }
+            }
         }
     }
 }
