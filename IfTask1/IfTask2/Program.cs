@@ -6,7 +6,19 @@ namespace IfTask2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to IfTaskTwo");
+            Console.WriteLine("Ohjelma selvittää onko luku pariton tai parillinen");
+            Console.Write("Syötä kokonaisia numeroita " );
+
+            int userInputNumber = int.Parse(Console.ReadLine());
+
+            if(userInputNumber % 2 == 0 )
+            {
+                Console.WriteLine($"Numero {userInputNumber} on parillinen");
+            }
+            else
+            {
+                Console.WriteLine($"Numero {userInputNumber} on pariton");
+            }
         }
     }
 }
