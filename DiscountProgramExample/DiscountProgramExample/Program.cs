@@ -12,32 +12,30 @@ namespace DiscountProgramExample
         static void Main(string[] args)
         {
 
-            //Telling consumer to buy ticket
             Console.WriteLine("Hello, please proceed to buy your ticket. " + "Please note: one discount per user " + 
                 "except if you are student and or a Mtk clubs member");
-            //Informing them about prices
-            Console.WriteLine("Prices / Adult price 16 euros. / Child under 7 free. / Children over 7 years 8 euros. / ");
-            Console.WriteLine("Elderly people 65 or over 8 euros. / ");
-            Console.WriteLine("Student price is 15% discount remember to show your studentcard for the cashier.");
-            Console.WriteLine(" / Service Man price. / Mtk club member price. ");
-            
+            int ticketPrice = 16;
+
             //Customer will have to input their age
             Console.Write("Please, input your age ");
             int userInputAge = int.Parse(Console.ReadLine());
-
-            if(userInputAge == 0)
-            {
-                Console.Write("Charge normal price 16 euros");
-            }
-            if (userInputAge == 7)
-            {
-                Console.Write("You'll have a free pass to our show.");
-            }
             
-
-
-
-
+            if (userInputAge <= 7)
+            {
+                Console.WriteLine("Ticket is free");
+            }
+            else if (userInputAge > 8 && userInputAge < 15)
+            {
+                Console.WriteLine($"Ticket price is {ticketPrice*0.5}");
+            }
+            if (userInputAge >= 16)
+            {
+                Console.WriteLine($"No dicount. The ticket price is {ticketPrice}");
+            }
+            else if (userInputAge > 65 && userInputAge< 70 )
+            {
+                Console.WriteLine($"Ticket price is {ticketPrice*0.5}");
+            }
         }
     }
 }
