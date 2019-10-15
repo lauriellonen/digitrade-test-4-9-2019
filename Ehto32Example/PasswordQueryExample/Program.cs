@@ -6,6 +6,7 @@ namespace PasswordQueryExample
     {
         static void Main(string[] args)
         {
+            //pasword query example 0.1.0
             string password = "qwerty1234";
             int attemptCounter = 0;
 
