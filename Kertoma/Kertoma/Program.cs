@@ -14,6 +14,7 @@ namespace Kertoma
             int n = 0;
             int fact = 1;
 
+            //Print a message to user
             Console.WriteLine("Kertoma laskenta");
             Console.WriteLine("Minkä luvun kertoma lasketaan ? ");
             n = int.Parse(Console.ReadLine());
@@ -24,6 +25,7 @@ namespace Kertoma
             }
             else
             {
+                //Loop, where parameter is count. 
                 while(n > 0)
                 {
                     fact = fact * n;
