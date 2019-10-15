@@ -15,6 +15,7 @@ namespace DiscountProgramExample
             Console.WriteLine("Hello, please proceed to buy your ticket. " + "Please note: one discount per user " +
                 "except if you are student and or a Mtk clubmember");
 
+            //Ticket prices and discount parameters 
             int ticketPrice = 25;
             double studentDiscount = ticketPrice * 0.45;
             double mtkClubDiscount = ticketPrice * 0.15;
@@ -28,16 +29,16 @@ namespace DiscountProgramExample
             */
             Console.Write("Please, input your age ");
             int userInputAge = int.Parse(Console.ReadLine());
-            String isStudent;
-            String isMtkClubMember;
-            String isServiceMan;
+            String isStudent;                                           //student
+            String isMtkClubMember;                                     //MTk clubmember
+            String isServiceMan;                                        //Service man 
             //String isSomeonePayingTicket;
 
-            if (userInputAge <= 7)
+            if (userInputAge <= 7)                                      //if user input age seven or lower ticket is free
             {
                 Console.WriteLine("Your ticket price is free.");
             }
-            else if (userInputAge >= 8 && userInputAge <= 15)
+            else if (userInputAge >= 8 && userInputAge <= 15)           //if user input age between 8 and 15 
             {
                 Console.WriteLine($"Ticket price is {ticketPrice * 0.5} euros");
             }
