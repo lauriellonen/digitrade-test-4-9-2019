@@ -3,7 +3,7 @@
 namespace DiscountProgramExample
 /*
  * This program is counting ticket discount for the users 
- * Versio 1.0 made by Lauri Ellonen 
+ * Versio 1.1.3 made by Lauri Ellonen 
 */
 
 {
@@ -20,6 +20,7 @@ namespace DiscountProgramExample
             double mtkClubDiscount = ticketPrice * 0.15;
             double mtkStdentClubDiscount = ticketPrice * 0.15 + studentDiscount;
             double serviceManDiscount = ticketPrice * 0.5;
+            double serviceManPlusStudentD = ticketPrice * 0.45 + serviceManDiscount;
             /*
              * Customer will have to input their age.
              * And also the customers that are eligible for the discounted prices
