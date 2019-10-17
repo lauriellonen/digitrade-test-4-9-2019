@@ -27,11 +27,11 @@ namespace IfTask3
                 }
                 if (userInputNumber % 2 == 0)
                 {
-                    Console.WriteLine("ja {userInputNumber} on parillinen");
+                    Console.WriteLine($"ja {userInputNumber} on parillinen");
                 }
                 else
                 {
-                    Console.WriteLine("ja {userInputNumber} on pariton");
+                    Console.WriteLine($"ja {userInputNumber} on pariton");
                 }
 
             }

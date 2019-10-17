@@ -1,7 +1,8 @@
 ﻿using System;
 /// <summary>
-/// This is my random number program example
-/// made by Lauri Ellonen 
+/// Make a program that will prints integers 1-10 and their square roots.
+/// made by Lauri Ellonen
+/// Saimia UAS 17.10.19
 /// </summary>
 namespace RandomNumberExample
 {
