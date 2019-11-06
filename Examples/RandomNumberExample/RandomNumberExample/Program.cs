@@ -11,9 +11,11 @@ namespace RandomNumberExample
         static void Main(string[] args)
         {
             Console.Write("Input... ");
-            int userInput = int.Parse(Console.ReadLine());
-
+            int userInput = 0; 
+                
             new Random();
+
+            
         }
     }
 }
