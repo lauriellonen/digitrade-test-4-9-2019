@@ -28,6 +28,7 @@ namespace TablesExample
             {
                 Console.WriteLine(numbers[i]);
             }
+            Console.WriteLine("Press any key to shut down program. ");
         }
 
 
