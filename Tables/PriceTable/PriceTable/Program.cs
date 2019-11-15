@@ -6,7 +6,7 @@ namespace PriceTable
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            Console.WriteLine("PriceTable");
             /*
              * In this Table I will created numbers with decimal.  
              */
