@@ -1,22 +1,19 @@
 ﻿using System;
 
-namespace Functions_Task4
+namespace Functions_Task4b
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int maxNumber = 0;
-            int sequenceOfNumber=0;
             Console.WriteLine("Ohjelma palauttaa syötetyistä luvuista suurimman luvun");
-            string resultMessage = MaxNumberCalculator(ref maxNumber, ref sequenceOfNumber);
+            string resultMessage = MaxNumberCalculator();
             Console.WriteLine($"Syötit seuraavat luvut:\n {resultMessage}");
-            Console.WriteLine($"Suurin {maxNumber} oli {sequenceOfNumber}. luku.");
         }
-        static string MaxNumberCalculator(ref int maxNumber, ref int sequenceOfNumber)
+        static string MaxNumberCalculator()
         {
-            //int maxNumber=0;
-            //int sequenceOfNumber;
+            int maxNumber = 0;
+            int sequenceOfNumber;
             string message = string.Empty;
             Console.WriteLine("Syötä 10 kokonaislukua");
             for (int i = 0; i < 10; i++)
@@ -27,11 +24,9 @@ namespace Functions_Task4
 
                 if (isnumber)
                 {
-                    //generoidaan palautettava viesti syötetyistä luvuista.
-                    message = $"{message}, {userValue}"; 
+                    message = $"{message}, {userValue}";
                     if (userValue > maxNumber)
                     {
-                        //Selvitetään
                         maxNumber = userValue;
                         sequenceOfNumber = i + 1;
                     }
@@ -39,7 +34,7 @@ namespace Functions_Task4
                 else
                 {
                     Console.WriteLine("Väärä syöte, syötä luku:");
-                    i--;        
+                    i--;
                 }
             }
             return message;
