@@ -7,7 +7,7 @@ namespace StringTask1
         static void Main(string[] args)
         {
             Console.WriteLine("Merkkijono käsittely esimerkki");
-            string message = "  Hello World!  ";
+            string message = "Hello World!";
             //Tulostetaan messages -muuttujen merkit yksitellen näytölle.
             Console.WriteLine($"{message} on {message.Length} merkkiä.");
 
@@ -17,6 +17,13 @@ namespace StringTask1
             string tempMessage = message.Trim();
             PrintMessage(tempMessage);
 
+            //Muuntaa kirjaimet isoiksi kirjaimiksi. 
+            tempMessage = message.ToUpper();
+            PrintMessage(tempMessage);
+
+            //Esitään merkinkohtaa merkkijonosta. 
+            int position = tempMessage.IndexOf(' ');
+            Console.WriteLine($"Välilyönti löytyy kohdasta {position}");
             //for (int i =0;i<message.Length; i++)
             //{
             //    Console.WriteLine(message[i]);
