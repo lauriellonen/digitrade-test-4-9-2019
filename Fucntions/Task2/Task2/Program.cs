@@ -32,8 +32,6 @@ namespace Task2
                 return secondNumber;
             }
         }
-
-
         static int GetMaxNumber(int firstNumber, int secondNumber)
         {
             if (firstNumber > secondNumber)
