@@ -7,13 +7,26 @@ namespace StringTask1
         static void Main(string[] args)
         {
             Console.WriteLine("Merkkijono käsittely esimerkki");
-            string message = "Hello World";
+            string message = "  Hello World!  ";
             //Tulostetaan messages -muuttujen merkit yksitellen näytölle.
             Console.WriteLine($"{message} on {message.Length} merkkiä.");
 
-            for (int i =0;i<message.Length; i++)
+            PrintMessage(message);
+
+            //poistetaan välilyönnit alusta ja lopusta.
+            string tempMessage = message.Trim();
+            PrintMessage(tempMessage);
+
+            //for (int i =0;i<message.Length; i++)
+            //{
+            //    Console.WriteLine(message[i]);
+            //}
+        }
+        static void PrintMessage(string s)
+        {
+            for (int i = 0; i < s.Length; i++)
             {
-                Console.WriteLine(message[i]);
+                Console.WriteLine(s[i]);
             }
         }
     }
