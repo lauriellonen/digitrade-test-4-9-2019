@@ -7,7 +7,7 @@ namespace HETUprogram
         static void Main(string[] args)
         {
             Console.WriteLine("Ohjelma tarkastaa Hetun oikeudellisuuden.");
-            string userInput = "061096-083C";
+            string userInput = "06 110196-183A";
             userInput = RemoveSpaces(userInput);
             int idNumber = InputParser(userInput);
             char getLastChar = GetUserInputChkMark(userInput);
@@ -53,6 +53,7 @@ namespace HETUprogram
             return result;
         }
 
+        //Tarkistetaan Hetun pituus 
         static bool IsValidLenght(string userInput)
         {
             if (userInput.Length == 11)
@@ -61,6 +62,7 @@ namespace HETUprogram
                 return false;
         }
 
+        //Poistetaan tyhjät 
         static string RemoveSpaces(string userInput)
         {
             string result = userInput.Replace(" ", "");
@@ -77,7 +79,8 @@ namespace HETUprogram
             removed = removed.Remove(6, 1);
             //Luetaan 
             //string result = stringParser.Substring(0, 6);
-            return int.Parse(removed);
+            //return int.Parse(removed);
+            return 0; 
         }
         static bool isValidID(int idNumber, char userInputChkMark)
         {
